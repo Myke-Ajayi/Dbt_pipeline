@@ -3,7 +3,7 @@ import duckdb
 from dataclasses import dataclass
 
 DATA_DIRECTORY = Path(__file__).parent.parent / "data"
-DATABASE_PATH = DATA_DIRECTORY / "stage_2.db"
+DATABASE_PATH = DATA_DIRECTORY / "duckdb.db"
 SOURCE_DATA_DIRECTORY = DATA_DIRECTORY / "source_data"
 
 
@@ -37,6 +37,9 @@ source_datasets = [
 
 def _db_connection():
     connection = duckdb.connect(str(DATABASE_PATH))
+    connection.execute("INSTALL spatial;")
+
+    connection.execute("LOAD spatial;")
     connection.sql(f"LOAD spatial;")
     return connection
 
