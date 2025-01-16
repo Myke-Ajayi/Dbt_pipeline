@@ -1,0 +1,9 @@
+default_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "../data/farm_to_market_dbt.db"
+      extensions:
+        - spatial
+      schema: farm_to_market_dbt
