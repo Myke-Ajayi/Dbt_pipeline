@@ -1,0 +1,21 @@
+name: "farm_to_market"
+
+profile: "default_profile"
+
+model-paths: ["models"]
+
+models:
+  farm_to_market:
+    staging:
+      +materialized: table
+    intermediate:
+      +materialized: table
+    product:
+      +materialized: table
+
+data_tests:
+  +store_failures: true
+  schema: "_tests"
+
+flags:
+  fail-fast: true
