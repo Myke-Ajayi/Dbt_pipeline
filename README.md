@@ -58,7 +58,15 @@ With this pipeline, you can:
 ## Features
 
 Automated Workflow: Utilize dbt to orchestrate end-to-end data transformations.
+
 Modular Design: Organize your SQL models, sources, and tests into reusable components for cleaner project structure.
+
 Data Validation: Use dbt's built-in testing and documentation capabilities to ensure data accuracy and reliability.
+
 Scalability: Adaptable to any database environment, including Snowflake, BigQuery, Redshift, and others.
+
 CI/CD Integration: Incorporate dbt into your CI/CD pipelines for seamless deployment.
+
+## Graph of dbt data pipleline
+
+![alt text](image.png)
