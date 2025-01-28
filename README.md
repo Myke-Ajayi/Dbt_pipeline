@@ -69,4 +69,4 @@ CI/CD Integration: Incorporate dbt into your CI/CD pipelines for seamless deploy
 
 ## Graph of dbt data pipleline
 
-![alt text](image.png)
+![alt text](Dbt_pipeline/docs/dbt-dag.png)
